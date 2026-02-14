@@ -2,7 +2,10 @@
 
 <h2>Books</h2>
 <a asp-action="Create" class="btn btn-primary">Add Book</a>
-
+<form asp-action="Search">
+   <input type=text />
+   <input type=submit />
+</form>
 <table class="table">
     <tr>
         <th>Title</th>
@@ -32,3 +35,4 @@
         </tr>
     }
 </table>
+
