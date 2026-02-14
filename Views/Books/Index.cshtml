@@ -2,9 +2,9 @@
 
 <h2>Books</h2>
 <a asp-action="Create" class="btn btn-primary">Add Book</a>
-<form asp-action="Search">
-   <input type=text />
-   <input type=submit />
+<form asp-action="Search" method="get" >
+   <input type="text" />
+   <button type="submit" class="btn btn-primary">Search</button>
 </form>
 <table class="table">
     <tr>
