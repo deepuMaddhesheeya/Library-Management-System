@@ -1,0 +1,10 @@
+﻿@model LibraryManagementSystem.Models.Book
+
+<h2>Add Book</h2>
+
+<form asp-action="Create">
+    <input asp-for="Title" placeholder="Title" class="form-control" />
+    <input asp-for="Author" placeholder="Author" class="form-control" />
+    <input asp-for="Genre" placeholder="Genre" class="form-control" />
+    <button type="submit" class="btn btn-success">Save</button>
+</form>

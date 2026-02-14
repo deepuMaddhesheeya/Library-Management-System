@@ -1,0 +1,11 @@
+﻿@model LibraryManagementSystem.Models.Book
+
+<h2>Edit Book</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <input asp-for="Title" class="form-control" />
+    <input asp-for="Author" class="form-control" />
+    <input asp-for="Genre" class="form-control" />
+    <button type="submit" class="btn btn-success">Update</button>
+</form>
