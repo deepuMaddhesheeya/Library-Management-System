@@ -58,6 +58,7 @@ namespace LibraryManagementSystem.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+        
         public IActionResult Search(int id)
         {
             var book = _context.Books.Find(id);
@@ -80,4 +81,5 @@ namespace LibraryManagementSystem.Controllers
         }
     }
 }
+
 
