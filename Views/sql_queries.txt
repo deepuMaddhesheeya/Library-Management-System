@@ -1,0 +1,35 @@
+---For create Database
+create database LibraryDB
+
+---create tables
+---Books Tables
+CREATE TABLE Books
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Title NVARCHAR(150) NOT NULL,
+    Author NVARCHAR(150) NOT NULL,
+    Genre NVARCHAR(100),
+    IsIssued BIT DEFAULT 0
+);
+
+---Members Table
+
+CREATE TABLE Members
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(150) NOT NULL,
+    Email NVARCHAR(150)
+);
+
+---Insert Sample Data
+
+INSERT INTO Books (Title, Author, Genre)
+VALUES
+('C# Basics', 'John Smith', 'Programming'),
+('ASP.NET Core', 'David Miller', 'Technology'),
+('Harry Potter', 'J.K. Rowling', 'Fantasy');
+
+INSERT INTO Members (Name, Email)
+VALUES
+('Rahul Sharma', 'rahul@gmail.com'),
+('Anita Verma', 'anita@gmail.com');
