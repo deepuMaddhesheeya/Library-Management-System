@@ -63,6 +63,7 @@ namespace LibraryManagementSystem.Controllers
         {
             var book = _context.Books.Find(id);
             return View(book);
+        } 
 
         public IActionResult Issue(int id)
         {
@@ -81,5 +82,6 @@ namespace LibraryManagementSystem.Controllers
         }
     }
 }
+
 
 
